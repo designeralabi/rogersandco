@@ -141,7 +141,7 @@ export default {
           brandTitle: "Website Design & Design Thinking",
           more: "Find out more",
           brandBg: "#60678E",
-          brandImage: "/src/assets/website_design.png",
+          brandImage: "./src/assets/website_design.png",
         },
         {
           brandCategory: "Product",
@@ -155,14 +155,14 @@ export default {
           brandTitle: "Software Development",
           more: "Find out more",
           brandBg: "#FFEDE1",
-          brandImage: "/src/assets/software_development.png",
+          brandImage: "./src/assets/software_development.png",
         },
         {
           brandCategory: "Hardware",
           brandTitle: "Security & Solar Power Systems",
           more: "Find out more",
           brandBg: "#FFD6D6",
-          brandImage: "/src/assets/security_solar.png",
+          brandImage: "./src/assets/security_solar.png",
         },
       ],
       portfolios: [
