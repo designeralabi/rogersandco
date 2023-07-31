@@ -141,7 +141,7 @@ export default {
           brandTitle: "Website Design & Design Thinking",
           more: "Find out more",
           brandBg: "#60678E",
-          brandImage: "./src/assets/website_design.png",
+          brandImage: "../assets/website_design.png",
         },
         {
           brandCategory: "Product",
