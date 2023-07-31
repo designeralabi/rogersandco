@@ -29,7 +29,7 @@ export default {
     },
   },
   components: {
-    name: "portfolioCard",
+    name: "PortfolioCard",
   },
 };
 </script>
