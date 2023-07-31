@@ -14,6 +14,9 @@
 
 <script>
 export default {
+  components: {
+    name: "PortfolioCard",
+  },
   props: {
     title: {
       type: String,
@@ -27,9 +30,6 @@ export default {
       type: String,
       require: true,
     },
-  },
-  components: {
-    name: "PortfolioCard",
   },
 };
 </script>

@@ -122,7 +122,7 @@
 <script>
 import BrandCard from "../components/BrandCard.vue";
 import { AkChevronRight } from "@kalimahapps/vue-icons";
-import portfolioCard from "../components/portfolioCard.vue";
+import portfolioCard from "../components/PortfolioCard.vue";
 import testimonialCard from "../components/TestimonialCard.vue";
 
 export default {
