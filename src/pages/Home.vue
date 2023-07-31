@@ -125,6 +125,9 @@ import { AkChevronRight } from "@kalimahapps/vue-icons";
 import portfolioCard from "../components/PortfolioCard.vue";
 import testimonialCard from "../components/TestimonialCard.vue";
 import websiteDesign from "../assets/website_design.png";
+import productDevelopment from "../assets/product_development.png";
+import softwareDevelopment from "../assets/software_development.png";
+import hardWare from "../assets/security_solar.png";
 
 export default {
   components: {
@@ -149,21 +152,21 @@ export default {
           brandTitle: "Product Design & Development",
           more: "Find out more",
           brandBg: "#D6EDFF",
-          brandImage: "/src/assets/product_development.png",
+          brandImage: productDevelopment,
         },
         {
           brandCategory: "Software",
           brandTitle: "Software Development",
           more: "Find out more",
           brandBg: "#FFEDE1",
-          brandImage: "./src/assets/software_development.png",
+          brandImage: softwareDevelopment,
         },
         {
           brandCategory: "Hardware",
           brandTitle: "Security & Solar Power Systems",
           more: "Find out more",
           brandBg: "#FFD6D6",
-          brandImage: "./src/assets/security_solar.png",
+          brandImage: hardWare,
         },
       ],
       portfolios: [
