@@ -76,6 +76,46 @@
         />
       </div>
     </div>
+
+    <!-- getStarted -->
+    <div class="flex max-w-[1048px] mx-auto gap-x-[99px] P-[48px] items-center">
+      <div>
+        <h2 class="font-extrabold text-3xl my-[40px]">Get Started</h2>
+        <hr />
+        <h3 class="my-8">
+          Join dozens of corporates, fast-growing startups scaling their teams,
+          accessing new market opportunities and building brilliant products
+          with the Rogers & Co. team.
+        </h3>
+      </div>
+      <form class="p-[48px] font-bold bg-slate-400/20 w-full">
+        <h2>Tell us about your project</h2>
+        <div class="flex flex-col space-y-6 mt-8">
+          <input
+            type="text"
+            placeholder="fullname"
+            class="w-full bg-transparent p-3 border-b placeholder:text-sm placeholder:-translate-y-2 placeholder:-translate-x-3 capitalize outline-none"
+          />
+          <input
+            type="text"
+            placeholder="company"
+            class="w-full bg-transparent p-3 border-b placeholder:text-sm placeholder:-translate-y-2 placeholder:-translate-x-3 capitalize outline-none"
+          />
+          <input
+            type="text"
+            placeholder="email"
+            class="w-full bg-transparent p-3 border-b placeholder:text-sm placeholder:-translate-y-2 placeholder:-translate-x-3 capitalize outline-none"
+          />
+          <input
+            type="text"
+            placeholder="message"
+            class="w-full bg-transparent p-3 border-b placeholder:text-sm placeholder:-translate-y-2 placeholder:-translate-x-3 capitalize outline-none"
+          />
+        </div>
+      </form>
+    </div>
+
+    <!-- footer -->
   </div>
 </template>
 
