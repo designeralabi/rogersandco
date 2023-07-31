@@ -124,6 +124,7 @@ import BrandCard from "../components/BrandCard.vue";
 import { AkChevronRight } from "@kalimahapps/vue-icons";
 import portfolioCard from "../components/PortfolioCard.vue";
 import testimonialCard from "../components/TestimonialCard.vue";
+import websiteDesign from "../assets/website_design.png";
 
 export default {
   components: {
@@ -141,7 +142,7 @@ export default {
           brandTitle: "Website Design & Design Thinking",
           more: "Find out more",
           brandBg: "#60678E",
-          brandImage: "../../src/assets/website_design.png",
+          brandImage: websiteDesign,
         },
         {
           brandCategory: "Product",
