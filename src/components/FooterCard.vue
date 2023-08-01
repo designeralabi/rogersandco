@@ -10,6 +10,16 @@
       </h3>
       <h3>info@rogers.co</h3>
       <h3>+234(0)8169169966</h3>
+      <div class="mt-8">
+        <h1 class="">
+          Download the <span class="border-b-2">Rogers&Co brochure.pdf</span
+          ><span class="ml-2">(11mb)</span>
+          <a
+            href=""
+            download=""
+          ></a>
+        </h1>
+      </div>
     </div>
 
     <!-- {/* col_2 */} -->

@@ -1,7 +1,8 @@
 <template>
   <div>
     <!-- hero section -->
-    <navBar />
+    <AppHeader />
+    <!-- <navBar /> -->
     <div class="text-center space-y-7 py-[247px]">
       <h1 class="text-[40px] font-bold">Innovation made simple</h1>
       <h2>Innovate, transform, succeed with us.</h2>
@@ -126,8 +127,9 @@ import BrandCard from "../components/BrandCard.vue";
 import { AkChevronRight } from "@kalimahapps/vue-icons";
 import portfolioCard from "../components/PortfolioCard.vue";
 import testimonialCard from "../components/TestimonialCard.vue";
-// header
-import navBar from "../components/NavBar.vue";
+// AppHeader
+import AppHeader from "../components/AppHeader.vue";
+
 // footer
 import footerCard from "../components/FooterCard.vue";
 // brandCategory
@@ -148,8 +150,8 @@ export default {
     AkChevronRight,
     portfolioCard,
     testimonialCard,
+    AppHeader,
     footerCard,
-    navBar,
   },
   data() {
     return {
