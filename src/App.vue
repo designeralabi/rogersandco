@@ -1,5 +1,5 @@
 <script setup>
-import Home from './pages/Home.vue';
+import Home from "./pages/Home.vue";
 </script>
 
 <template>
@@ -7,4 +7,3 @@ import Home from './pages/Home.vue';
     <Home />
   </div>
 </template>
-

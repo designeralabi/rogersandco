@@ -1,7 +1,8 @@
 <template>
   <div>
     <!-- hero section -->
-    <div class="text-center space-y-7 py-[147px]">
+    <navBar />
+    <div class="text-center space-y-7 py-[247px]">
       <h1 class="text-[40px] font-bold">Innovation made simple</h1>
       <h2>Innovate, transform, succeed with us.</h2>
       <button
@@ -89,7 +90,7 @@
         </h3>
       </div>
       <form class="p-[48px] font-bold bg-slate-400/20 w-full">
-        <h2>Tell us about your project</h2>
+        <h2 class="text-2xl text-center">Tell us about your project</h2>
         <div class="flex flex-col space-y-6 mt-8">
           <input
             type="text"
@@ -116,6 +117,7 @@
     </div>
 
     <!-- footer -->
+    <footerCard />
   </div>
 </template>
 
@@ -124,10 +126,20 @@ import BrandCard from "../components/BrandCard.vue";
 import { AkChevronRight } from "@kalimahapps/vue-icons";
 import portfolioCard from "../components/PortfolioCard.vue";
 import testimonialCard from "../components/TestimonialCard.vue";
+// header
+import navBar from "../components/NavBar.vue";
+// footer
+import footerCard from "../components/FooterCard.vue";
+// brandCategory
 import websiteDesign from "../assets/website_design.png";
 import productDevelopment from "../assets/product_development.png";
 import softwareDevelopment from "../assets/software_development.png";
 import hardWare from "../assets/security_solar.png";
+// brandImages
+import yato from "../assets/yato.png";
+import swish from "../assets/swish.png";
+import mdataSolution from "../assets/mdata_solutions.png";
+import mdocScan from "../assets/mdocScan.png";
 
 export default {
   components: {
@@ -136,6 +148,8 @@ export default {
     AkChevronRight,
     portfolioCard,
     testimonialCard,
+    footerCard,
+    navBar,
   },
   data() {
     return {
@@ -173,32 +187,32 @@ export default {
         {
           title: "Yato",
           category: "Design",
-          imgUrl: "/src/assets/yato.png",
+          imgUrl: yato,
         },
         {
           title: "Swish",
           category: "Product",
-          imgUrl: "/src/assets/swish.png",
+          imgUrl: swish,
         },
         {
           title: "MData Solutions",
           category: "Design",
-          imgUrl: "/src/assets/mdata_solutions.png",
+          imgUrl: mdataSolution,
         },
         {
           title: "MDocScan",
           category: "SoftwareSoftware",
-          imgUrl: "/src/assets/mdocScan.png",
+          imgUrl: mdocScan,
         },
         {
           title: "Profitable",
           category: "Software",
-          imgUrl: "/src/assets/yato.png",
+          imgUrl: yato,
         },
         {
           title: "Security and Solar Projects",
           category: "Hardware",
-          imgUrl: "/src/assets/yato.png",
+          imgUrl: yato,
         },
       ],
       testimonials: [
