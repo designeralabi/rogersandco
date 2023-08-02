@@ -1,14 +1,26 @@
 <template>
-  <div>
+  <div class="">
+    <!-- hero section -->
+    <AppHeader />
     <!-- main_hero -->
-    <div class="w-full">
-      <h3>About Us</h3>
+    <div class="w-full p-[98px] bg-red-100">
+      <h3 class="text-center text-[24px] font-bold">About Us</h3>
     </div>
     <!-- hero -->
     <div>
       <div>
         <div>
-          <h3>About Rogers & Co.</h3>
+          <img
+            src=""
+            alt=""
+          />
+          <img
+            src=""
+            alt=""
+          />
+        </div>
+        <div>
+          <h3 class="font-bold text-[32px]">About Rogers & Co.</h3>
           <p>
             Rogers & Co. is a leading technology organization at the forefront
             of delivering seamless solutions for both software and hardware
@@ -38,20 +50,23 @@
     </div>
 
     <!-- we are awesome -->
-    <div>
-      <h3>WE ARE AWESOME</h3>
-      <h3>Why Choose Us</h3>
-      <div class="grid grid-cols- my-[98px]">
+    <div class="py-[60px]">
+      <h3 class="text-yellow-200 text-center mb-5">WE ARE AWESOME</h3>
+      <h3 class="text-center text-3xl font-bold">Why Choose Us</h3>
+      <div
+        class="grid grid-cols-4 rounded-md my-[98px] gap-x-[40px] max-w-[1155px] mx-auto"
+      >
         <div
           v-for="choose in chooses"
-          class="p-[21px] flex flex-col text-center"
+          class="p-[21px] w-[210] gap-x-[21px] flex flex-col text-center items-center justify-center bg-[#252533] text-white"
           :key="choose.title"
         >
           <img
             :src="choose.icon"
             :alt="choose.title"
+            class="w-[60px] h-[60px]"
           />
-          <h3 class="font-bold my-[28px]">{{ choose.title }}</h3>
+          <h3 class="font-bold text-lg my-[28px]">{{ choose.title }}</h3>
           <p>{{ choose.content }}</p>
         </div>
       </div>
@@ -71,33 +86,40 @@
 </template>
 
 <script>
+// AppHeader
+import AppHeader from "../components/AppHeader.vue";
+import research from "../assets/icons/Research.png";
+import idea from "../assets/icons/Idea.png";
+import conversation from "../assets/icons/Conversation.png";
+import seo from "../assets/icons/Seo.png";
 export default {
   components: {
     name: "About",
+    AppHeader,
   },
   data() {
     return {
       chooses: [
         {
-          icon: "",
+          icon: research,
           title: "Research and Analysis",
           content:
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         },
         {
-          icon: "",
+          icon: conversation,
           title: "Negotiation and Power",
           content:
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         },
         {
-          icon: "",
+          icon: idea,
           title: "Creative and Innovative solutions",
           content:
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         },
         {
-          icon: "",
+          icon: seo,
           title: "Transparency and Ease of work",
           content:
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
