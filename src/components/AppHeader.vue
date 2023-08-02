@@ -10,13 +10,13 @@ export default {
 </script>
 
 <template>
-  <div class="bg-white">
+  <div class="">
     <div class="flex items-center justify-between py-6 max-w-[1155px] mx-auto">
       <div>
         <img
           :src="imgPath"
           alt="logo"
-          class="w-[120px]"
+          class="w-[120px] invert"
         />
       </div>
       <nav class="flex items-center space-x-4 capitalize">
