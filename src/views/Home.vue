@@ -13,8 +13,30 @@
       </button>
     </div>
 
+    <!-- hero_media  -->
+    <div class="relative">
+      <div
+        class="absolute bg-black/30 z-20 top-0 left-0 right-0 bottom-0"
+      ></div>
+      <div class="w-full pl-[170px]">
+        <video
+          muted="muted"
+          loop="loop"
+          playsinline=""
+          preload="auto"
+          autoplay
+          class="w-full"
+        >
+          <source
+            :src="rogersVid"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+    </div>
+
     <!-- brands -->
-    <div class="py-16">
+    <div class="py-36 bg-[#252533]">
       <h1 class="text-center font-extrabold text-3xl my-[40px]">
         We Help Brands with
       </h1>
@@ -39,14 +61,12 @@
     </div>
 
     <!-- portfolio -->
-    <div>
+    <div class="pt-36">
       <h2 class="text-center text-2xl">portfolio</h2>
       <div
         class="flex items-center gap-x-[64px] mx-auto max-w-[672px] my-8 font-bold"
       >
         <h3 class="bg-[#FEF200] text-black p-4">All</h3>
-        <h3>Design</h3>
-        <h3>Product</h3>
         <h3>Software</h3>
         <h3>Hardware</h3>
       </div>
@@ -61,11 +81,12 @@
           :imgUrl="portfolio.imgUrl"
         />
       </div>
+      <h3>see more</h3>
     </div>
 
     <!-- testimonials -->
-    <div class="p-[68px]">
-      <h3 class="text-center text-2xl font-bold my-8">Testimonials</h3>
+    <div class="py-[137px]">
+      <h3 class="text-center text-3xl font-bold my-16">Testimonials</h3>
       <div
         class="grid gap-x-[52px] overflow-x-scroll grid-cols-3 max-w-[1155px] mx-auto"
       >
@@ -80,7 +101,9 @@
     </div>
 
     <!-- getStarted -->
-    <div class="flex max-w-[1048px] mx-auto gap-x-[99px] P-[48px] items-center">
+    <div
+      class="flex max-w-[1155px] mx-auto gap-x-[99px] Py-[580px] items-center"
+    >
       <div>
         <h2 class="font-extrabold text-3xl my-[40px]">Get Started</h2>
         <hr />
@@ -142,6 +165,8 @@ import yato from "../assets/yato.png";
 import swish from "../assets/swish.png";
 import mdataSolution from "../assets/mdata_solutions.png";
 import mdocScan from "../assets/mdocScan.png";
+// video
+import rogersVid from "../assets/video/rogers&Co.mp4";
 
 export default {
   components: {
@@ -155,6 +180,7 @@ export default {
   },
   data() {
     return {
+      rogersVid,
       brands: [
         {
           brandCategory: "Design",
