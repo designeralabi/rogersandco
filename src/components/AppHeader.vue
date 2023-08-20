@@ -16,7 +16,7 @@ export default {
         <img
           :src="imgPath"
           alt="logo"
-          class="w-[120px] invert"
+          class="w-[120px]"
         />
       </div>
       <nav class="flex items-center space-x-4 capitalize">
@@ -26,6 +26,15 @@ export default {
         <router-link :to="{ name: 'hardware' }">hardware</router-link>
         <router-link :to="{ name: 'contact' }">contact</router-link>
       </nav>
+      <div>
+        <div>
+          <h3>
+            E: <a href="mailto: info@rogersandco.xyz">info@rogersandco.xyz</a>
+          </h3>
+          <h3>T: +234(0)8169169966</h3>
+        </div>
+        <h3>A: 1637, Ademola Adetokunbo, VI, Lagos, Nigeria</h3>
+      </div>
     </div>
   </div>
 </template>
