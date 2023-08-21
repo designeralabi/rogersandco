@@ -11,10 +11,26 @@
           fundamental building blocks in crafting robust solutions that enhance
           the operational framework of our clients' enterprises.
         </h2>
+
         <div class="flex items-center gap-x-10">
-          <AkLinkedInV1Fill class="text-2xl" />
-          <AkFacebookFill class="text-2xl" />
-          <AkTwitterFill class="text-2xl" />
+          <a
+            href="#"
+            class="hover:text-gray-400 transition-colors"
+          >
+            <AkLinkedInV1Fill class="text-2xl cursor-pointer"
+          /></a>
+          <a
+            href="#"
+            class="hover:text-gray-400 transition-colors"
+          >
+            <AkFacebookFill class="text-2xl"
+          /></a>
+          <a
+            href="#"
+            class="hover:text-gray-400 transition-colors"
+          >
+            <AkTwitterFill class="text-2xl"
+          /></a>
         </div>
       </div>
     </div>
@@ -42,11 +58,17 @@
     </div>
 
     <!-- brands -->
-    <div class="py-36 bg-[#252533]">
-      <h1 class="text-center font-extrabold text-3xl my-[40px]">
-        We Help Brands with
-      </h1>
-      <div class="grid grid-cols-2 gap-7 my-[72px] mx-auto w-[980px]">
+    <div class="py-36 bg-[#F0F0F0] flex justify-center items-center h-screen">
+      <div class="max-w-[1255px] mx-auto px-64">
+        <h1 class="font-extrabold text-3xl">
+          Rogers & Co. is a leading technology organization at the forefront of
+          delivering seamless solutions for both software and hardware projects.
+          With a proven track record of excellence, we are dedicated to guiding
+          our clients through every step of their technological journey.
+        </h1>
+      </div>
+
+      <!-- <div class="grid grid-cols-2 gap-7 my-[72px] mx-auto w-[980px]">
         <BrandCard
           v-for="(brand, index) in brands"
           :key="index"
@@ -55,15 +77,7 @@
           :brandBg="brand.brandBg"
           :brandImage="brand.brandImage"
         />
-      </div>
-      <div class="flex items-center gap-x-[43px] justify-center">
-        <h2>Let’s Start A New Project Together</h2>
-        <button
-          class="flex items-center bg-[#FEF200] rounded-[40px] font-bold text-black py-[18px] px-[24px]"
-        >
-          request a Quote <span class="ml-4"> <AkChevronRight /></span>
-        </button>
-      </div>
+      </div> -->
     </div>
 
     <!-- portfolio -->
