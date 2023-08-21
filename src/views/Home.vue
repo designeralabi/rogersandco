@@ -3,14 +3,14 @@
     <!-- hero section -->
     <AppHeader />
     <!-- <navBar /> -->
-    <div class="text-center space-y-7 py-[247px]">
+    <div class="space-y-7 py-[247px] pl-64">
       <h1 class="text-[40px] font-bold">Innovation made simple</h1>
-      <h2>Innovate, transform, succeed with us.</h2>
-      <button
-        class="flex items-center bg-[#FEF200] rounded-[40px] font-bold text-black py-[18px] px-[24px] mx-auto"
-      >
-        Get Started Today
-      </button>
+      <h2>
+        Strategy, technological innovation, and hardware integration form the
+        fundamental building blocks in crafting robust solutions that enhance
+        the operational framework of our clients' enterprises.
+      </h2>
+      <div></div>
     </div>
 
     <!-- hero_media  -->
@@ -168,6 +168,11 @@ import mdocScan from "../assets/mdocScan.png";
 // video
 import rogersVid from "../assets/video/rogers&Co.mp4";
 
+// vue icons
+import { AkLinkedInV1Fill } from "@kalimahapps/vue-icons";
+import { AkFacebookFill } from "@kalimahapps/vue-icons";
+import { AkTwitterFill } from "@kalimahapps/vue-icons";
+
 export default {
   components: {
     name: "Home",
@@ -177,6 +182,10 @@ export default {
     testimonialCard,
     AppHeader,
     footerCard,
+    // vue_icons_component
+    AkLinkedInV1Fill,
+    AkFacebookFill,
+    AkTwitterFill,
   },
   data() {
     return {
