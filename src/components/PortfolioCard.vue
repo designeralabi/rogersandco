@@ -3,7 +3,7 @@
     <img
       :src="imgUrl"
       :alt="title"
-      class="w-[250.969px]"
+      class="max-w-[438x]"
     />
     <div>
       <h3 class="font-bold">{{ title }}</h3>

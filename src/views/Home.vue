@@ -67,32 +67,11 @@
           our clients through every step of their technological journey.
         </h1>
       </div>
-
-      <!-- <div class="grid grid-cols-2 gap-7 my-[72px] mx-auto w-[980px]">
-        <BrandCard
-          v-for="(brand, index) in brands"
-          :key="index"
-          :brandCategory="brand.brandCategory"
-          :brandTitle="brand.brandTitle"
-          :brandBg="brand.brandBg"
-          :brandImage="brand.brandImage"
-        />
-      </div> -->
     </div>
-
-    <!-- portfolio -->
-    <div class="pt-36">
-      <h2 class="text-center text-2xl">portfolio</h2>
-      <div
-        class="flex items-center gap-x-[64px] mx-auto max-w-[672px] my-8 font-bold"
-      >
-        <h3 class="bg-[#FEF200] text-black p-4">All</h3>
-        <h3>Software</h3>
-        <h3>Hardware</h3>
-      </div>
-      <div
-        class="grid grid-cols-3 max-w-[1048px] mx-auto gap-x-[147px] gap-y-[44px] mt-[80px]"
-      >
+    <!-- Relevant cases -->
+    <div class="pl-64">
+      <h2 class="pl-24 text-5xl">Relevant cases</h2>
+      <div class="grid grid-cols-3 gap-y-[44px]">
         <portfolioCard
           v-for="portfolio in portfolios"
           :key="portfolio.title"
@@ -101,7 +80,6 @@
           :imgUrl="portfolio.imgUrl"
         />
       </div>
-      <h3>see more</h3>
     </div>
 
     <!-- testimonials -->
