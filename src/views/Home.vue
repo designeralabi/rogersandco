@@ -59,8 +59,8 @@
 
     <!-- brands -->
     <div class="py-36 bg-[#F0F0F0] flex justify-center items-center h-screen">
-      <div class="max-w-[1255px] mx-auto px-64">
-        <h1 class="font-extrabold text-3xl">
+      <div class="max-w-[1100px] mx-auto px-64">
+        <h1 class="font-extrabold leading-normal text-3xl">
           Rogers & Co. is a leading technology organization at the forefront of
           delivering seamless solutions for both software and hardware projects.
           With a proven track record of excellence, we are dedicated to guiding
