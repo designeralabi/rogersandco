@@ -3,14 +3,20 @@
     <!-- hero section -->
     <AppHeader />
     <!-- <navBar /> -->
-    <div class="space-y-7 py-[247px] pl-64">
-      <h1 class="text-[40px] font-bold">Innovation made simple</h1>
-      <h2>
-        Strategy, technological innovation, and hardware integration form the
-        fundamental building blocks in crafting robust solutions that enhance
-        the operational framework of our clients' enterprises.
-      </h2>
-      <div></div>
+    <div class="space-y-7 py-[247px] pl-64 max-w-[1255px] mx-auto">
+      <h1 class="text-6xl font-bold">Innovation made simple</h1>
+      <div class="flex justify-between">
+        <h2 class="w-[473px]">
+          Strategy, technological innovation, and hardware integration form the
+          fundamental building blocks in crafting robust solutions that enhance
+          the operational framework of our clients' enterprises.
+        </h2>
+        <div class="flex items-center gap-x-10">
+          <AkLinkedInV1Fill class="text-2xl" />
+          <AkFacebookFill class="text-2xl" />
+          <AkTwitterFill class="text-2xl" />
+        </div>
+      </div>
     </div>
 
     <!-- hero_media  -->
