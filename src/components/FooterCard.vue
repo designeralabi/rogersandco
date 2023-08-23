@@ -6,6 +6,7 @@
       <!-- {/* col_1 */} -->
       <div className="flex flex-col">
         <div>
+          
           <img
             :src="imgPath"
             alt="logo"

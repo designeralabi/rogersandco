@@ -14,7 +14,7 @@ export default {
     <div
       class="flex items-start justify-between py-9 max-w-[1255px] mx-auto relative"
     >
-      <div class="“”">
+      <div>
         <img
           :src="imgPath"
           alt="logo"
@@ -23,7 +23,7 @@ export default {
       </div>
       <nav class="flex gap-x-11 pr-64 items-center space-x-4 capitalize">
         <router-link :to="{ name: 'software' }">Projects</router-link>
-        <router-link :to="{ name: 'about' }">Software</router-link>
+        <router-link :to="{ name: 'software' }">Software</router-link>
         <router-link :to="{ name: 'hardware' }">Hardware</router-link>
         <router-link :to="{ name: 'contact' }">Contact</router-link>
       </nav>
