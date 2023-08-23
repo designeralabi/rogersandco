@@ -3,12 +3,62 @@
 import AppHeader from "../components/AppHeader.vue";
 // footer
 import footerCard from "../components/FooterCard.vue";
+// vue icons
+import { AkLinkedInV1Fill } from "@kalimahapps/vue-icons";
+import { AkFacebookFill } from "@kalimahapps/vue-icons";
+import { AkTwitterFill } from "@kalimahapps/vue-icons";
 
 export default {
   components: {
     name: "software",
     AppHeader,
     footerCard,
+    // vue_icons_component
+    AkLinkedInV1Fill,
+    AkFacebookFill,
+    AkTwitterFill,
+  },
+  data() {
+    return {
+      heroCards: [
+        {
+          title: "card 1",
+          color: "#ffffff",
+          textColo: "#000",
+        },
+        {
+          title: "card 2",
+          color: "#000000",
+        },
+        {
+          title: "card 3",
+          color: "#ffffff",
+          textColo: "#000",
+        },
+        {
+          title: "card 4",
+          color: "#000000",
+        },
+        {
+          title: "card 5",
+          color: "#000000",
+        },
+        {
+          title: "card 6",
+          color: "#ffffff",
+          textColo: "#000",
+        },
+        {
+          title: "card 7",
+          color: "#000000",
+        },
+        {
+          title: "card 8",
+          color: "#ffffff",
+          textColo: "#000",
+        },
+      ],
+    };
   },
 };
 </script>
@@ -18,13 +68,12 @@ export default {
     <!-- hero section -->
     <AppHeader />
     <!-- <navBar /> -->
-    <div class="space-y-7 py-[247px] pl-64 max-w-[1255px] mx-auto">
+    <div class="space-y-7 pt-[247px] pl-64 max-w-[1255px] mx-auto">
       <h1 class="text-6xl font-bold">Software</h1>
       <div class="flex justify-between">
         <h2 class="w-[473px]">
-          Strategy, technological innovation, and hardware integration form the
-          fundamental building blocks in crafting robust solutions that enhance
-          the operational framework of our clients' enterprises.
+          We develop tailored, complex web applications and systems in the form
+          of applications, online services, apps, intranets and extranets.
         </h2>
 
         <div class="flex items-center gap-x-10">
@@ -49,12 +98,27 @@ export default {
         </div>
       </div>
     </div>
+    <div class="grid grid-cols-4 pl-64 mt-16">
+      <div
+        v-for="card in heroCards"
+        :key="card.title"
+        class="w-[325px] h-[267px] flex items-center justify-center"
+        :style="{ backgroundColor: card.color }"
+      >
+        <h3
+          class="text-white"
+          :style="{ colors: card.textColor }"
+        >
+          {{ card.title }}
+        </h3>
+      </div>
+    </div>
 
     <div class="bg-[#979A9D] text-white pl-64">
       <div class="py-20 pr-32">
         <h3 class="text-4xl my-8">Design</h3>
-        <div class="flex gap-x-28">
-          <div class="flex justify-between gap-x-11  bg-red-400 items-start">
+        <div class="flex gap-x-28 mt-16 justify-between items-start">
+          <div class="flex justify-between gap-x-11 w-[600px] items-center">
             <span class="w-full">What we offer</span>
             <span class="h-[2px] w-24 bg-white"></span>
           </div>
