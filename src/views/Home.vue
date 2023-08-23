@@ -230,17 +230,17 @@ export default {
           imgUrl: swish,
         },
         {
-          title: "MData Solutions",
+          title: "LiveSmart",
           category: "Design",
           imgUrl: mdataSolution,
         },
         {
-          title: "MDocScan",
+          title: "Mdata solution",
           category: "SoftwareSoftware",
           imgUrl: mdocScan,
         },
         {
-          title: "Profitable",
+          title: "Jaybion Pharmacy",
           category: "Software",
           imgUrl: yato,
         },

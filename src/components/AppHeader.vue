@@ -12,7 +12,7 @@ export default {
 <template>
   <div>
     <div
-      class="flex items-center justify-between py-9 max-w-[1255px] mx-auto relative"
+      class="flex items-start justify-between py-9 max-w-[1255px] mx-auto relative"
     >
       <div class="“”">
         <img

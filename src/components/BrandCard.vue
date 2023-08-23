@@ -20,7 +20,7 @@ export default {
     :style="{ backgroundColor: brandBg }"
   >
     <div>
-      <h3 class="uppercase">{{ brandCategory }}</h3>
+      <h3 c lass="uppercase">{{ brandCategory }}</h3>
       <h2 class="font-bold w-[202.42px] my-[26px]">{{ brandTitle }}</h2>
       <h3 class="cursor-pointer">
         <a
