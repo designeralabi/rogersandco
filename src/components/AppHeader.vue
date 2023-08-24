@@ -12,22 +12,22 @@ export default {
 <template>
   <div>
     <div
-      class="flex items-start justify-between py-9 max-w-[1255px] mx-auto relative"
+      class="flex items-start justify-between py-20 mx-auto pl-[170px] relative"
     >
-      <div>
+      <router-link :to="{ name: 'home' }">
         <img
           :src="imgPath"
           alt="logo"
-          class="w-[120px]"
+          class="w-[120px] block"
         />
-      </div>
-      <nav class="flex gap-x-11 pr-64 items-center space-x-4 capitalize">
+      </router-link>
+      <nav class="flex gap-x-11 items-center space-x-4 capitalize">
         <router-link :to="{ name: 'software' }">Projects</router-link>
         <router-link :to="{ name: 'software' }">Software</router-link>
         <router-link :to="{ name: 'hardware' }">Hardware</router-link>
         <router-link :to="{ name: 'contact' }">Contact</router-link>
       </nav>
-      <div class="flex gap-x-8 text-gray-500">
+      <div class="flex gap-x-8 text-gray-500 pr-[75px]">
         <div>
           <h3 class="underline">
             E: <a href="mailto: info@rogersandco.xyz">info@rogersandco.xyz</a>

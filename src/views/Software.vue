@@ -114,54 +114,12 @@ export default {
       </div>
     </div>
 
-    <div class="bg-[#979A9D] text-white pl-64">
+    <div class="bg-[#F0F0F0] text-black pl-64">
       <div class="py-20 pr-32">
         <h3 class="text-4xl my-8">Our Services</h3>
         <div class="flex gap-x-28 mt-16 justify-between items-start">
-          <div class="flex justify-between gap-x-11 w-[600px] items-center">
-            <span class="w-full">What we offer</span>
-            <span class="h-[2px] w-24 bg-white"></span>
-          </div>
           <div>
             <h3 class="text-2xl mb-8">Design</h3>
-            <p>
-              The Rogers & Co. design team is dedicated to re-imagining how
-              brands, businesses and organizations are perceived. We specialize
-              in bringing digital identities into the real world. While very
-              diverse, our aesthetic approach often involves a distinct sense of
-              style and design, aiming to combine out-of-the-box design with
-              functionality. Strategically, our work aims to elevate brand
-              offerings by distilling core messaging down to its clearest and
-              freshest visual form.
-            </p>
-          </div>
-        </div>
-        <div class="flex gap-x-28 mt-16 justify-between items-start">
-          <div class="flex justify-between gap-x-11 w-[600px] items-center">
-            <span class="w-full">What we offer</span>
-            <span class="h-[2px] w-24 bg-white"></span>
-          </div>
-          <div>
-            <h3 class="text-2xl mb-8">Product Development</h3>
-            <p>
-              The Rogers & Co. design team is dedicated to re-imagining how
-              brands, businesses and organizations are perceived. We specialize
-              in bringing digital identities into the real world. While very
-              diverse, our aesthetic approach often involves a distinct sense of
-              style and design, aiming to combine out-of-the-box design with
-              functionality. Strategically, our work aims to elevate brand
-              offerings by distilling core messaging down to its clearest and
-              freshest visual form.
-            </p>
-          </div>
-        </div>
-        <div class="flex gap-x-28 mt-16 justify-between items-start">
-          <div class="flex justify-between gap-x-11 w-[600px] items-center">
-            <span class="w-full">What we offer</span>
-            <span class="h-[2px] w-24 bg-white"></span>
-          </div>
-          <div>
-            <h3 class="text-2xl mb-8">Software Development</h3>
             <p>
               The Rogers & Co. design team is dedicated to re-imagining how
               brands, businesses and organizations are perceived. We specialize
