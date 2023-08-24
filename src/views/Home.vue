@@ -198,7 +198,7 @@ export default {
         },
         {
           brandCategory: "Product",
-          brandTitle: "Product Design & Development",
+          brandTitle: "Product Des ign & Development",
           more: "Find out more",
           brandBg: "#D6EDFF",
           brandImage: productDevelopment,
