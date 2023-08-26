@@ -5,9 +5,9 @@
       :alt="title"
       class="max-w-[438x]"
     />
-    <div>
-      <h3 class="font-bold">{{ title }}</h3>
-      <h3>{{ category }}</h3>
+    <div class="mt-8">
+      <h3 class="font-inter text-sm">{{ category }}</h3>
+      <h3 class="font-bold text-2xl">{{ title }}</h3>
     </div>
   </div>
 </template>

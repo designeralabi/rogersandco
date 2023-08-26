@@ -4,7 +4,7 @@ export default {
   theme: {
     fontFamily: {
       cardo: ["Cardo", "serif"],
-      inter: ["Inter", "sans - serif"],
+      inter: ["Inter", "sansSerif"],
     },
     extend: {},
   },

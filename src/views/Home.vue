@@ -3,10 +3,14 @@
     <!-- hero section -->
     <AppHeader />
     <!-- <navBar /> -->
-    <div class="space-y-7 py-[247px] pl-64 max-w-[1255px] mx-auto">
-      <h1 class="text-6xl font-bold">Innovation made simple</h1>
+    <div class="space-y-7 p-[120px] mx-auto">
+      <h1 class="text-7xl font-bold ml-24 max-w-[1500px]">
+        Transforming Possibilities, <br />
+        Using Software and Hardware <br />
+        to Redefine the Future
+      </h1>
       <div class="flex justify-between">
-        <h2 class="w-[473px]">
+        <h2 class="w-[703px] ml-24">
           Strategy, technological innovation, and hardware integration form the
           fundamental building blocks in crafting robust solutions that enhance
           the operational framework of our clients' enterprises.
@@ -58,9 +62,11 @@
     </div>
 
     <!-- brands -->
-    <div class="py-36 bg-[#F0F0F0] flex justify-center items-center h-screen">
-      <div class="max-w-[1100px] mx-auto px-64">
-        <h1 class="font-extrabold leading-normal text-3xl">
+    <div
+      class="py-[300px] px-[120px] bg-[#F0F0F0] flex justify-center items-center h-screen"
+    >
+      <div class="max-w-[1100px] mx-auto">
+        <h1 class="font-extrabold leading-normal text-2xl">
           Rogers & Co. is a leading technology organization at the forefront of
           delivering seamless solutions for both software and hardware projects.
           With a proven track record of excellence, we are dedicated to guiding
@@ -69,21 +75,26 @@
       </div>
     </div>
     <!-- Relevant cases -->
-    <div class="pl-64">
-      <h2 class="pl-24 text-5xl">Relevant cases</h2>
-      <div class="grid grid-cols-3 gap-y-[44px]">
-        <portfolioCard
-          v-for="portfolio in portfolios"
-          :key="portfolio.title"
-          :title="portfolio.title"
-          :category="portfolio.category"
-          :imgUrl="portfolio.imgUrl"
-        />
+    <div class="pl-[170px] bg-white -z-10 relative">
+      <div class="z-30 pb-[170px]">
+        <h2 class="text-5xl pl-[120px] z-40 mb-[50px]">Relevant cases</h2>
+        <div class="grid grid-cols-3 gap-y-24">
+          <portfolioCard
+            v-for="portfolio in portfolios"
+            :key="portfolio.title"
+            :title="portfolio.title"
+            :category="portfolio.category"
+            :imgUrl="portfolio.imgUrl"
+          />
+        </div>
       </div>
+      <div
+        class="bg-[#F0F0F0] h-[230px] block absolute top-0 -z-20 w-full left-0 right-0"
+      ></div>
     </div>
 
     <!-- testimonials -->
-    <div class="py-[137px]">
+    <!-- <div class="py-[137px]">
       <h3 class="text-center text-3xl font-bold my-16">Testimonials</h3>
       <div
         class="grid gap-x-[52px] overflow-x-scroll grid-cols-3 max-w-[1155px] mx-auto"
@@ -96,46 +107,40 @@
           :company="testimonial.company"
         />
       </div>
+    </div> -->
+    <div class="bg-[#979A9D] text-white px-[170px] py-[120px]">
+      <h1 class="text-5xl mb-[50px]">Services</h1>
+      <div class="flex justify-between font-inter">
+        <h3>What we offer</h3>
+        <div class="bg-white h-[2px] w-20"></div>
+        <p class="max-w-[630px] px-12">
+          At our company, we take pride in offering a comprehensive range of
+          cutting-edge services to meet the diverse needs of our clients. Our
+          software division excels in providing top-notch solutions, including
+          innovative design, seamless product development, and robust software
+          and hardware engineering. In the realm of hardware, we specialize in
+          two vital areas: security and renewable energy. Our dedicated security
+          experts employ the latest technologies to fortify your systems and
+          safeguard your valuable data.
+        </p>
+      </div>
     </div>
 
-    <!-- getStarted -->
-    <div
-      class="flex max-w-[1155px] mx-auto gap-x-[99px] Py-[580px] items-center"
-    >
-      <div>
-        <h2 class="font-extrabold text-3xl my-[40px]">Get Started</h2>
-        <hr />
-        <h3 class="my-8">
-          Join dozens of corporates, fast-growing startups scaling their teams,
-          accessing new market opportunities and building brilliant products
-          with the Rogers & Co. team.
-        </h3>
+    <div class="bg-white pl-[170px] -z-10 relative">
+      <div class="flex">
+        <div class="bg-[#FDDDD1] w-full h-[650px]"></div>
+        <div class="bg-[#C1CACE] w-full h-[650px]"></div>
       </div>
-      <form class="p-[48px] font-bold bg-slate-400/20 w-full">
-        <h2 class="text-2xl text-center">Tell us about your project</h2>
-        <div class="flex flex-col space-y-6 mt-8">
-          <input
-            type="text"
-            placeholder="fullname"
-            class="w-full bg-transparent p-3 border-b placeholder:text-sm placeholder:-translate-y-2 placeholder:-translate-x-3 capitalize outline-none"
-          />
-          <input
-            type="text"
-            placeholder="company"
-            class="w-full bg-transparent p-3 border-b placeholder:text-sm placeholder:-translate-y-2 placeholder:-translate-x-3 capitalize outline-none"
-          />
-          <input
-            type="text"
-            placeholder="email"
-            class="w-full bg-transparent p-3 border-b placeholder:text-sm placeholder:-translate-y-2 placeholder:-translate-x-3 capitalize outline-none"
-          />
-          <input
-            type="text"
-            placeholder="message"
-            class="w-full bg-transparent p-3 border-b placeholder:text-sm placeholder:-translate-y-2 placeholder:-translate-x-3 capitalize outline-none"
-          />
-        </div>
-      </form>
+      <div
+        class="bg-[#979A9D] h-[230px] block absolute top-0 -z-20 w-full left-0 right-0"
+      ></div>
+    </div>
+
+    <!-- clients section -->
+    <div class="bg-white">
+      <div class="px-[170px] py-[120px]">
+        <h1 class="text-3xl mb-[50px]">selection of our clients</h1>
+      </div>
     </div>
 
     <!-- footer -->
@@ -220,13 +225,13 @@ export default {
       ],
       portfolios: [
         {
-          title: "Yato",
-          category: "Design",
+          title: "Profitable",
+          category: "Corporate Website | Web Application",
           imgUrl: yato,
         },
         {
           title: "Swish",
-          category: "Product",
+          category: "Brand Identity & Development & Design | Web Application",
           imgUrl: swish,
         },
         {
@@ -240,13 +245,14 @@ export default {
           imgUrl: mdocScan,
         },
         {
-          title: "Jaybion Pharmacy",
-          category: "Software",
+          title: "Osborne Towers",
+          category:
+            "Audio, Video, Lighting, Climate control and home automation.",
           imgUrl: yato,
         },
         {
-          title: "Security and Solar Projects",
-          category: "Hardware",
+          title: "Nycil Limited",
+          category: "IP Video Surveillance",
           imgUrl: yato,
         },
       ],
@@ -270,6 +276,11 @@ export default {
           company: "yato",
         },
       ],
+      clients: [
+        {
+          imgPath
+        }
+      ]
     };
   },
 };
