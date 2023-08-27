@@ -1,12 +1,14 @@
 <template>
-  <div class="bg-[#3F4041] pl-44">
+  <div class="bg-[#3F4041] z-50 pl-44 relative">
     <div
-      className="flex flex-col lg:flex-row  lg:justify-between lg:items-start p-[52px] mt-[72px] bg-[#555657] text-white"
+      class="bg-white h-[130px] block absolute top-0 -z-20 w-full left-0 right-0"
+    ></div>
+    <div
+      className="flex flex-col lg:flex-row  h-[650px] lg:justify-between lg:items-start pl-[100px] pr-[70px] pt-[95px] pb-[50px] bg-[#555657] text-white"
     >
       <!-- {/* col_1 */} -->
       <div className="flex flex-col">
         <div>
-          
           <img
             :src="imgPath"
             alt="logo"
@@ -16,7 +18,7 @@
         <h3 className="text-4xl text-white my-16 font-semibold">
           We would love to hear from you.
         </h3>
-        <h3 class="mb-8 max-w-[550px]">
+        <h3 class="mb-8 max-w-[550px] font-inter">
           If you have a project or collaboration that you would like to discuss
           with us, or if you are curious to hear more about how we can help you,
           we look forward to hearing from you.

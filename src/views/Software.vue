@@ -7,12 +7,18 @@ import footerCard from "../components/FooterCard.vue";
 import { AkLinkedInV1Fill } from "@kalimahapps/vue-icons";
 import { AkFacebookFill } from "@kalimahapps/vue-icons";
 import { AkTwitterFill } from "@kalimahapps/vue-icons";
+// portfoliocard
+import portfolioCard from "../components/PortfolioCard.vue";
+// import images
+import swish from "../assets/swish.png";
+import mdocScan from "../assets/mdocScan.png";
 
 export default {
   components: {
     name: "software",
     AppHeader,
     footerCard,
+    portfolioCard,
     // vue_icons_component
     AkLinkedInV1Fill,
     AkFacebookFill,
@@ -58,6 +64,18 @@ export default {
           textColo: "#000",
         },
       ],
+      portfolios: [
+        {
+          title: "Swish",
+          category: "Brand Identity & Development & Design | Web Application",
+          imgUrl: swish,
+        },
+        {
+          title: "Mdata solution",
+          category: "SoftwareSoftware",
+          imgUrl: mdocScan,
+        },
+      ],
     };
   },
 };
@@ -68,10 +86,10 @@ export default {
     <!-- hero section -->
     <AppHeader />
     <!-- <navBar /> -->
-    <div class="space-y-7 pt-[247px] pl-64 max-w-[1255px] mx-auto">
-      <h1 class="text-6xl font-bold">Software</h1>
+    <div class="space-y-7 p-[120px] mx-auto">
+      <h1 class="text-7xl font-bold ml-24 max-w-[1500px]">Software</h1>
       <div class="flex justify-between">
-        <h2 class="w-[473px]">
+        <h2 class="w-[703px] ml-24">
           We develop tailored, complex web applications and systems in the form
           of applications, online services, apps, intranets and extranets.
         </h2>
@@ -115,7 +133,7 @@ export default {
     </div>
 
     <div class="bg-[#F0F0F0] text-black pl-64">
-      <div class="py-20 pr-32">
+      <div class="py-[89px] pr-32">
         <h3 class="text-4xl my-8">Our Services</h3>
         <div class="flex gap-x-28 mt-16 justify-between items-start">
           <div>
@@ -131,8 +149,38 @@ export default {
               freshest visual form.
             </p>
           </div>
+           <div>
+            <h3 class="text-2xl mb-8">Product Development</h3>
+            <p>
+             At Rogers & Co, our Software Product Development department sets the standard for excellence in the industry. Our team of expert developers and designers are dedicated to creating cutting-edge products that solve real-world problems and drive business success. With a focus on user-centered design and the latest technology, we deliver solutions that not only meet, but exceed expectations. 
+            </p>
+          </div>
+           <div>
+            <h3 class="text-2xl mb-8">Software Development</h3>
+            <p>
+              At Rogers & Co, our Software Development team is composed of highly skilled and knowledgeable professionals who are dedicated to delivering innovative software solutions. Our process is guided by Agile methodologies, such as Scrum and Kanban, to ensure flexibility and responsiveness in response to the ever-changing needs of our clients. 
+            </p>
+          </div>
         </div>
       </div>
+    </div>
+    <!-- related cases -->
+    <div class="pl-[170px] bg-white -z-10 relative">
+      <div class="z-30 pb-[170px]">
+        <h2 class="text-5xl pl-[120px] z-40 mb-[50px]">Relevant cases</h2>
+        <div class="grid grid-cols-3 gap-y-24">
+          <portfolioCard
+            v-for="portfolio in portfolios"
+            :key="portfolio.title"
+            :title="portfolio.title"
+            :category="portfolio.category"
+            :imgUrl="portfolio.imgUrl"
+          />
+        </div>
+      </div>
+      <div
+        class="bg-[#F0F0F0] h-[230px] block absolute top-0 -z-20 w-full left-0 right-0"
+      ></div>
     </div>
   </div>
 </template>

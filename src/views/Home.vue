@@ -65,13 +65,26 @@
     <div
       class="py-[300px] px-[120px] bg-[#F0F0F0] flex justify-center items-center h-screen"
     >
-      <div class="max-w-[1100px] mx-auto">
+      <div class="max-w-[900px] mx-auto">
         <h1 class="font-extrabold leading-normal text-2xl">
           Rogers & Co. is a leading technology organization at the forefront of
-          delivering seamless solutions for both software and hardware projects.
-          With a proven track record of excellence, we are dedicated to guiding
-          our clients through every step of their technological journey.
+          delivering seamless solutions for both
+          <router-link
+            :to="{ name: 'software' }"
+            class="border-b border-gray-600"
+            >Software</router-link
+          >
+          and
+          <router-link
+            :to="{ name: 'hardware' }"
+            class="border-b border-gray-600"
+            >Hardware</router-link
+          >
+          projects. With a proven track record of excellence, we are dedicated
+          to guiding our clients through every step of their technological
+          journey.
         </h1>
+        <router-view></router-view>
       </div>
     </div>
     <!-- Relevant cases -->
@@ -109,20 +122,22 @@
       </div>
     </div> -->
     <div class="bg-[#979A9D] text-white px-[170px] py-[120px]">
-      <h1 class="text-5xl mb-[50px]">Services</h1>
-      <div class="flex justify-between font-inter">
-        <h3>What we offer</h3>
-        <div class="bg-white h-[2px] w-20"></div>
-        <p class="max-w-[630px] px-12">
-          At our company, we take pride in offering a comprehensive range of
-          cutting-edge services to meet the diverse needs of our clients. Our
-          software division excels in providing top-notch solutions, including
-          innovative design, seamless product development, and robust software
-          and hardware engineering. In the realm of hardware, we specialize in
-          two vital areas: security and renewable energy. Our dedicated security
-          experts employ the latest technologies to fortify your systems and
-          safeguard your valuable data.
-        </p>
+      <div class="">
+        <h1 class="text-5xl mb-[50px]">Services</h1>
+        <div class="flex justify-between font-inter">
+          <h3>What we offer</h3>
+          <div class="bg-white h-[2px] w-20"></div>
+          <p class="max-w-[630px] px-12">
+            At our company, we take pride in offering a comprehensive range of
+            cutting-edge services to meet the diverse needs of our clients. Our
+            software division excels in providing top-notch solutions, including
+            innovative design, seamless product development, and robust software
+            and hardware engineering. In the realm of hardware, we specialize in
+            two vital areas: security and renewable energy. Our dedicated
+            security experts employ the latest technologies to fortify your
+            systems and safeguard your valuable data.
+          </p>
+        </div>
       </div>
     </div>
 
@@ -137,9 +152,25 @@
     </div>
 
     <!-- clients section -->
-    <div class="bg-white">
-      <div class="px-[170px] py-[120px]">
-        <h1 class="text-3xl mb-[50px]">selection of our clients</h1>
+    <div class="bg-white pl-[170px]">
+      <div class="px-[170px] py-[120px] bg-[#F0F0F0]">
+        <h1 class="text-4xl mb-[50px]">A selection of our clients</h1>
+        <div class="grid grid-cols-5 gap-x-14 gap-y-14 place-items-center">
+          <div
+            class="w-[225px] h-[130px]"
+            v-for="client in clients"
+          >
+            <img
+              :src="client.imgPath"
+              alt="client.alt"
+              srcset=""
+              :key="client.alt"
+              class="block object-contain w-full h-full"
+              width="225px"
+              height="130px"
+            />
+          </div>
+        </div>
       </div>
     </div>
 
@@ -175,6 +206,18 @@ import rogersVid from "../assets/video/rogers&Co.mp4";
 import { AkLinkedInV1Fill } from "@kalimahapps/vue-icons";
 import { AkFacebookFill } from "@kalimahapps/vue-icons";
 import { AkTwitterFill } from "@kalimahapps/vue-icons";
+
+// clients logos
+import naca from "../assets/clients/naca_logo.png";
+import LiveSmart from "../assets/clients/livesmart_logo.png";
+import nsdc from "../assets/clients/nsdc_logo.png";
+import mdocscan from "../assets/clients/mdocScan.png";
+import aviation from "../assets/clients/aviation_logo.png";
+import buagroup from "../assets/clients/bua_group.png";
+import grange from "../assets/clients/grange_school.png";
+import mdatasolution from "../assets/clients/mdata_solutions.png";
+import nycil from "../assets/clients/nycil_group.png";
+import shishi from "../assets/clients/Shishi_food_hub.png";
 
 export default {
   components: {
@@ -278,9 +321,46 @@ export default {
       ],
       clients: [
         {
-          imgPath
-        }
-      ]
+          imgPath: naca,
+          alt: "naca",
+        },
+        {
+          imgPath: aviation,
+          alt: "aviation",
+        },
+        {
+          imgPath: LiveSmart,
+          alt: "LiveSmart",
+        },
+        {
+          imgPath: nsdc,
+          alt: "nsdc",
+        },
+        {
+          imgPath: mdocscan,
+          alt: "mdocscan",
+        },
+        {
+          imgPath: buagroup,
+          alt: "naca",
+        },
+        {
+          imgPath: grange,
+          alt: "grange",
+        },
+        {
+          imgPath: nycil,
+          alt: "nycil",
+        },
+        {
+          imgPath: shishi,
+          alt: "shishi",
+        },
+        {
+          imgPath: mdatasolution,
+          alt: "mdatasolution",
+        },
+      ],
     };
   },
 };
