@@ -149,16 +149,27 @@ export default {
               freshest visual form.
             </p>
           </div>
-           <div>
+          <div>
             <h3 class="text-2xl mb-8">Product Development</h3>
             <p>
-             At Rogers & Co, our Software Product Development department sets the standard for excellence in the industry. Our team of expert developers and designers are dedicated to creating cutting-edge products that solve real-world problems and drive business success. With a focus on user-centered design and the latest technology, we deliver solutions that not only meet, but exceed expectations. 
+              At Rogers & Co, our Software Product Development department sets
+              the standard for excellence in the industry. Our team of expert
+              developers and designers are dedicated to creating cutting-edge
+              products that solve real-world problems and drive business
+              success. With a focus on user-centered design and the latest
+              technology, we deliver solutions that not only meet, but exceed
+              expectations.
             </p>
           </div>
-           <div>
+          <div>
             <h3 class="text-2xl mb-8">Software Development</h3>
             <p>
-              At Rogers & Co, our Software Development team is composed of highly skilled and knowledgeable professionals who are dedicated to delivering innovative software solutions. Our process is guided by Agile methodologies, such as Scrum and Kanban, to ensure flexibility and responsiveness in response to the ever-changing needs of our clients. 
+              At Rogers & Co, our Software Development team is composed of
+              highly skilled and knowledgeable professionals who are dedicated
+              to delivering innovative software solutions. Our process is guided
+              by Agile methodologies, such as Scrum and Kanban, to ensure
+              flexibility and responsiveness in response to the ever-changing
+              needs of our clients.
             </p>
           </div>
         </div>
@@ -181,6 +192,37 @@ export default {
       <div
         class="bg-[#F0F0F0] h-[230px] block absolute top-0 -z-20 w-full left-0 right-0"
       ></div>
+    </div>
+
+    <div class="px-[140px] py-[100px]">
+      <div class="max-w-5xl flex gap-x-24 mx-auto">
+        <div class="items-start w-full">
+          <h3 class="font-bold">Adesokan & Adesokan</h3>
+          <h3>Adesokan & Adesokan LLP</h3>
+          <h3>Managing Partner</h3>
+        </div>
+        <div class="">
+          <h3>
+            "Embracing an Electronic Document Management System (EDMS) was a
+            game-changer for our organization. The seamless transition from
+            paper to digital documents not only streamlined our workflow but
+            also revolutionized how we collaborate. Retrieving crucial
+            information now takes seconds, not hours, boosting our efficiency
+            and productivity. The EDMS service has truly empowered us to work
+            smarter and faster, making it an indispensable asset for our
+            business."
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white pl-[140px]">
+      <div class="bg-[#F0F0F0] py-[90px]">
+        <h3 class="text-4xl pl-[100px]">
+          Contact us if you want to hear more about how we can help with your
+          project
+        </h3>
+      </div>
     </div>
   </div>
 </template>
